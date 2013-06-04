@@ -1,5 +1,4 @@
 #!/bin/sh
-# Date: 01/02/2010
 # Author: Denny Wu
 # Subject: pipe, cut, sed
 # Usage: catalog.sh < passwd > output
