@@ -13,12 +13,10 @@ $ua->timeout(5);
 $ua->agent('Mozilla/4.0');
 $ua->cookie_jar(HTTP::Cookies->new(file=>'getsina.cookies',autosave=>1));
  
-my $res = $ua->post('https://api.weibo.com/oauth2/authorize',
+my $res = $ua->post('https://api.weibo.com/oauth2/authorize?client_id=3431055205&redirect_uri=http%3A%2F%2Fwww.isciro.com&response_type=code&userID=13916231570&passwd=150700',
     [
-        client_id =>$appkey,
-    #    client_secret => $appsecret,
-        redirect_uri=>'http://www.isciro.com',
-        response_type=>'code'
+        userID =>'13916231570',
+        passwd =>'150700'
     ],
 );
 
