@@ -15,8 +15,8 @@ $ua->cookie_jar(HTTP::Cookies->new(file=>'getsina.cookies',autosave=>1));
  
 my $res = $ua->post('https://api.weibo.com/oauth2/authorize?client_id=3431055205&redirect_uri=http%3A%2F%2Fwww.isciro.com&response_type=code&userID=13916231570&passwd=150700',
     [
-        userID =>'13916231570',
-        passwd =>'150700'
+        userID =>'xxxxxx',
+        passwd =>'xxxxxx'
     ],
 );
 
